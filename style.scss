@@ -1,0 +1,135 @@
+html {
+  font-family: 'Roboto Condensed';
+  color: #fff;
+  background: #fafafa;
+}
+
+body {
+  padding: 0em 6em;
+}
+
+.header {
+  z-index: 1;
+  position: relative;
+  color: #c90000;
+}
+
+.header .skew:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: visible;
+  width: 100%;
+  height: 400px;
+  background: #c90000;
+  z-index: -1;
+  -webkit-transform: skewY(-35deg);
+  -moz-transform: skewY(-35deg);
+  -ms-transform: skewY(-35deg);
+  -o-transform: skewY(-35deg);
+  transform: skewY(-35deg);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: initial;
+}
+
+.header .skew:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: visible;
+  width: 100%;
+  height: 400px;
+  background: #c90000;
+  z-index: -1;
+  -webkit-transform: skewY(35deg);
+  -moz-transform: skewY(35deg);
+  -ms-transform: skewY(35deg);
+  -o-transform: skewY(35deg);
+  transform: skewY(35deg);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: initial;
+}
+
+.header .skew .header-inner {
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  margin: 0;
+  text-align: center;
+}
+
+.logo a {
+  color: #c90000;
+  text-decoration: none;
+  background-color: #fff;
+  border-radius: 20px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .5rem;
+  padding: 3px 35px;
+}
+
+.container {
+  padding-top: 700px;
+  background-color: #f9f9f9;
+  border: 1px solid rgba(20, 20, 20, .1);
+  position: relative;
+  box-shadow: 10px 10px 16px -9px rgba(20, 20, 20, .8);
+}
+
+.main-container {
+  position: relative;
+
+  h1 {
+      color: #000;
+      text-align: center;
+      font-family: 'Marlboro', serif;
+      font-size: 190px;
+      margin: 0;
+  }
+}
+
+section {
+  margin: 10px auto;
+  padding-bottom: 10px;
+  position: relative;
+
+  p {
+      color: #c8ad66;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 42px;
+      letter-spacing: 1rem;
+      margin: 0;
+      border-bottom: 15px solid #c90000;
+  }
+}
+
+.wrapper {
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1;
+    font-size: 30px;
+    letter-spacing: 3px;
+    white-space: nowrap;
+
+    &__content {
+        background: #c8ad66;
+        color: black;
+        text-indent: -10px;
+    }
+}
+
+.pm_logo {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
